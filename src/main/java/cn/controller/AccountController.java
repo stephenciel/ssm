@@ -27,7 +27,7 @@ public class AccountController {
     public String findAll(Model model){
         List<Account> all = accountServiceImpl.findAll();
         httpServletRequest.setAttribute("list",all);
-
+        System.out.println("测试");
 
         return "forward:findAlla";
 
